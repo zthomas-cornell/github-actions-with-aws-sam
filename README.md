@@ -1,6 +1,6 @@
 # github-actions-with-aws-sam
 
-This is an example of continuous / deployment integration for an AWS lambda function.
+This is a proof of concept for continuous deployment / integration for AWS lambda functions.
 
 - hello_earth - This is an example of a single AWS lambda in your repo.
 - goodbye_mars - This is another example of an AWS lambda in your repo.
