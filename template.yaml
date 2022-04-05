@@ -20,15 +20,15 @@ Parameters:
 # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
 Resources:
   HelloEarthFunction:
-    FunctionName: hello-earth-lambda
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: hello-earth-lambda
       CodeUri: hello_earth/
       Role: { "Ref" : "Role" }
 
   HelloMarsFunction:
-    FunctionName: hello-mars-lambda
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: hello-mars-lambda
       CodeUri: hello_mars/
       Role: { "Ref" : "Role" }
