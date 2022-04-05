@@ -6,6 +6,7 @@ Description: Template for continuous deployment of lambdas
 Globals:
   Function:
     Timeout: 180
+    MemorySize: 128
     Runtime: python3.8
     Handler: app.lambda_handler
     Architectures:
