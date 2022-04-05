@@ -20,4 +20,4 @@ jobs:
 # Run Unit tests- Specify unit tests here
 
 # sam deploy
-      - run: sam deploy --parameter-overrides Role=${{ secrets.PROD_LAMBDA_ROLE_ARN }} Env=test --no-confirm-changeset --no-fail-on-empty-changeset --stack-name hello-two --s3-bucket sam-cli-etl-prod --capabilities CAPABILITY_IAM --region us-west-2
+      # - run: sam deploy --parameter-overrides Role=${{ secrets.PROD_LAMBDA_ROLE_ARN }} Env=test --no-confirm-changeset --no-fail-on-empty-changeset --stack-name hello-two --s3-bucket sam-cli-etl-prod --capabilities CAPABILITY_IAM --region us-west-2
