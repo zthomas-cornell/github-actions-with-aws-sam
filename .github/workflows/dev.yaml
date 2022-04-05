@@ -20,4 +20,4 @@ jobs:
 # Run Unit tests- Specify unit tests here
 
 # sam deploy
-      - run: sam deploy --parameter-overrides Role=arn:aws:iam::673897531687:role/CornellLambdaRole Env=test --no-confirm-changeset --no-fail-on-empty-changeset --stack-name hello-planets --s3-bucket sam-cli-etl-dev --capabilities CAPABILITY_IAM --region us-west-2
+      - run: sam deploy --parameter-overrides Role=${{ secrets.DEV_LAMBDA_ROLE_ARN }} Env=test --no-confirm-changeset --no-fail-on-empty-changeset --stack-name hello-planets --s3-bucket sam-cli-etl-dev --capabilities CAPABILITY_IAM --region us-west-2
