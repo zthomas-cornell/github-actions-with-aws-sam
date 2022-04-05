@@ -20,4 +20,4 @@ jobs:
 # Run Unit tests- Specify unit tests here
 
 # sam deploy
-      - run: sam deploy --profile 467971947892 --parameter-overrides Role=arn:aws:iam::467971947892:role/CornellLambdaRole Env=test --no-confirm-changeset --no-fail-on-empty-changeset --stack-name hello-planets --s3-bucket sam-cli-managed-bucket --capabilities CAPABILITY_IAM --region us-west-2
+      - run: sam deploy --profile 4679-7194-7892 --parameter-overrides Role=arn:aws:iam::467971947892:role/CornellLambdaRole Env=test --no-confirm-changeset --no-fail-on-empty-changeset --stack-name hello-planets --s3-bucket sam-cli-managed-bucket --capabilities CAPABILITY_IAM --region us-west-2
